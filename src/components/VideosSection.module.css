@@ -23,6 +23,15 @@
   display: block;
 }
 
+.coverImgTop {
+  inset: unset;
+  top: -480px;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 480px);
+  object-position: center top;
+}
+
 /* Text panel */
 .textPanel {
   position: relative;

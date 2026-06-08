@@ -35,21 +35,21 @@ export default function VideosSection() {
         <div className={`${styles.textPanel} ${styles.light}`}>
           <div className={styles.panelContent}>
             <div className={styles.videoHeading}>
-              <p className={`${styles.videoSubtitle} ${styles.dark}`}>Videos</p>
+              <p className={`${styles.videoSubtitle} ${styles.darkText}`}>Videos</p>
               <p className={`${styles.videoTitle} ${styles.darkText}`}>Short form videos</p>
             </div>
             <p className={`${styles.videoDesc} ${styles.darkText}`}>
               Watch my playthroughs and shouting vibes during my long form videos
             </p>
             <button className={`${styles.outlineBtn} ${styles.darkOutline}`}>
-              Watch my short form youtube videos
+              Watch my TikTok video
             </button>
           </div>
         </div>
 
         <div className={styles.imagePanel}>
           <img
-            className={styles.coverImg}
+            className={`${styles.coverImg} ${styles.coverImgTop}`}
             src="/assets/shortform-image.png"
             alt="Short form video preview"
           />
