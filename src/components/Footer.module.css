@@ -1,0 +1,28 @@
+.footer {
+  width: 1728px;
+  height: 82px;
+  background-color: #edf9f2;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.copyright {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: normal;
+  color: #333;
+}
+
+.tagline {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: normal;
+  color: #333;
+  text-align: right;
+}
