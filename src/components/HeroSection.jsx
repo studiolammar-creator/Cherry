@@ -37,7 +37,12 @@ export default function HeroSection() {
             </p>
           </div>
 
-          <button className={styles.ctaBtn}>Get in contact with me</button>
+          <a
+            href="mailto:cherry.partnership@gmail.com"
+            className={styles.ctaBtn}
+          >
+            Get in contact with me
+          </a>
         </div>
       </div>
     </section>

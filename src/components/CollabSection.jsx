@@ -11,11 +11,11 @@ const availableFor = [
 ]
 
 const socialIcons = [
-  { src: '/assets/icon-tiktok.png', alt: 'TikTok' },
-  { src: '/assets/icon-youtube.png', alt: 'YouTube' },
-  { src: '/assets/icon-twitch.png', alt: 'Twitch' },
-  { src: '/assets/icon-instagram.png', alt: 'Instagram' },
-  { src: '/assets/icon-discord.png', alt: 'Discord' },
+  { src: '/assets/icon-tiktok.svg', alt: 'TikTok' },
+  { src: '/assets/icon-youtube.svg', alt: 'YouTube' },
+  { src: '/assets/icon-twitch.svg', alt: 'Twitch' },
+  { src: '/assets/icon-instagram.svg', alt: 'Instagram' },
+  { src: '/assets/icon-discord.svg', alt: 'Discord' },
 ]
 
 export default function CollabSection() {
@@ -42,8 +42,20 @@ export default function CollabSection() {
         </div>
 
         <div className={styles.buttons}>
-          <button className={styles.solidBtn}>Get in contact with me</button>
-          <button className={styles.outlineBtn}>Take a look at my media kit</button>
+          <a
+            href="mailto:cherry.partnership@gmail.com"
+            className={styles.solidBtn}
+          >
+            Get in contact with me
+          </a>
+          <a
+            href="https://drive.google.com/drive/folders/1dUSmnSzRJ01qhECvy1ayc4O3RZkydHhb?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.outlineBtn}
+          >
+            Take a look at my media kit
+          </a>
         </div>
 
         <div className={styles.socialIcons}>

@@ -23,9 +23,14 @@ export default function VideosSection() {
             <p className={styles.videoDesc}>
               Watch my playthroughs and shouting vibes during my long form videos
             </p>
-            <button className={`${styles.outlineBtn} ${styles.lightOutline}`}>
+            <a
+              href="https://www.youtube.com/@CH3RRYYT"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${styles.outlineBtn} ${styles.lightOutline}`}
+            >
               Watch my long form youtube videos
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -41,9 +46,14 @@ export default function VideosSection() {
             <p className={`${styles.videoDesc} ${styles.darkText}`}>
               Watch my playthroughs and shouting vibes during my long form videos
             </p>
-            <button className={`${styles.outlineBtn} ${styles.darkOutline}`}>
+            <a
+              href="https://www.tiktok.com/@cherrayy_?lang=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${styles.outlineBtn} ${styles.darkOutline}`}
+            >
               Watch my TikTok video
-            </button>
+            </a>
           </div>
         </div>
 

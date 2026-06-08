@@ -118,6 +118,7 @@
   white-space: nowrap;
   cursor: pointer;
   align-self: flex-start;
+  text-decoration: none;
 }
 
 .ctaBtn:hover {
