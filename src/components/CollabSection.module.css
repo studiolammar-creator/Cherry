@@ -1,39 +1,39 @@
 .section {
   position: relative;
-  width: 1728px;
-  height: 406px;
+  width: 100%;
   background-color: #0d1323;
   overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: clamp(24px, 3.7vw, 64px) clamp(20px, 4.63vw, 80px);
+  gap: clamp(24px, 3.7vw, 64px);
 }
 
 .bg {
   position: absolute;
   right: 0;
   top: 0;
-  width: 864px;
-  height: 406px;
+  width: 50%;
+  height: 100%;
   pointer-events: none;
+  object-fit: cover;
 }
 
 .left {
-  position: absolute;
-  left: 64px;
-  top: 64px;
-  width: 500px;
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: clamp(16px, 1.39vw, 24px);
   color: #edf9f2;
 }
 
 .right {
-  position: absolute;
-  left: 944px;
-  top: 64px;
-  width: 685px;
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: clamp(16px, 1.39vw, 24px);
   color: #edf9f2;
 }
 
@@ -42,27 +42,26 @@
   flex-direction: column;
   font-family: 'Bebas Neue', sans-serif;
   font-style: normal;
-  width: 461px;
 }
 
 .subtitle {
-  font-size: 16px;
+  font-size: clamp(12px, 0.93vw, 16px);
   line-height: normal;
-  margin-bottom: -8px;
+  margin-bottom: clamp(-4px, -0.46vw, -8px);
 }
 
 .title {
-  font-size: 80px;
-  line-height: 96px;
+  font-size: clamp(28px, 4.63vw, 80px);
+  line-height: 1.2;
 }
 
 .list {
   list-style: disc;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: normal;
-  padding-left: 27px;
+  font-size: clamp(14px, 1.04vw, 18px);
+  line-height: 1.5;
+  padding-left: 1.5em;
 }
 
 .list li {
@@ -71,7 +70,8 @@
 
 .buttons {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: clamp(12px, 1.39vw, 24px);
   align-items: center;
 }
 
@@ -79,13 +79,13 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 12px;
+  padding: clamp(6px, 0.46vw, 8px) clamp(10px, 0.69vw, 12px);
   background-color: #a50612;
   border: none;
   border-radius: 2px;
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: clamp(12px, 0.93vw, 16px);
+  line-height: 1.5;
   color: #ffffff;
   white-space: nowrap;
   cursor: pointer;
@@ -95,13 +95,13 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 12px;
+  padding: clamp(6px, 0.46vw, 8px) clamp(10px, 0.69vw, 12px);
   background: transparent;
   border: 2px solid #a50612;
   border-radius: 2px;
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: clamp(12px, 0.93vw, 16px);
+  line-height: 1.5;
   color: #ffffff;
   white-space: nowrap;
   cursor: pointer;
@@ -117,12 +117,45 @@
 
 .socialIcons {
   display: flex;
-  gap: 12px;
+  flex-wrap: wrap;
+  gap: clamp(8px, 0.69vw, 12px);
   align-items: center;
 }
 
 .icon {
-  width: 24px;
-  height: 24px;
+  width: clamp(20px, 1.39vw, 24px);
+  height: clamp(20px, 1.39vw, 24px);
   display: block;
+}
+
+@media (max-width: 768px) {
+  .section {
+    grid-template-columns: 1fr;
+    padding: 32px 24px;
+    gap: 40px;
+  }
+
+  .bg {
+    display: none;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    margin-bottom: -4px;
+  }
+
+  .title {
+    font-size: clamp(36px, 10vw, 60px);
+  }
+
+  .list,
+  .solidBtn,
+  .outlineBtn {
+    font-size: 16px;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
 }

@@ -49,7 +49,7 @@ export default function VideosSection() {
 
         <div className={styles.imagePanel}>
           <img
-            className={`${styles.coverImg} ${styles.shortformImg}`}
+            className={styles.coverImg}
             src="/assets/shortform-image.png"
             alt="Short form video preview"
           />

@@ -1,30 +1,23 @@
 .section {
-  position: relative;
-  width: 1728px;
-  height: 513px;
+  width: 100%;
   background-color: #edf9f2;
   color: #333;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: clamp(24px, 3.7vw, 64px) clamp(20px, 4.6vw, 80px);
+  gap: clamp(24px, 3.7vw, 64px);
 }
 
 .left {
-  position: absolute;
-  left: 80px;
-  top: 64px;
-  width: 500px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: clamp(16px, 1.39vw, 24px);
 }
 
 .right {
-  position: absolute;
-  left: 944px;
-  top: 64px;
-  width: 500px;
   display: flex;
   flex-direction: column;
-  gap: 11px;
+  gap: clamp(8px, 0.64vw, 11px);
 }
 
 .heading {
@@ -32,27 +25,26 @@
   flex-direction: column;
   font-family: 'Bebas Neue', sans-serif;
   font-style: normal;
-  width: 461px;
 }
 
 .subtitle {
-  font-size: 16px;
+  font-size: clamp(12px, 0.93vw, 16px);
   line-height: normal;
-  margin-bottom: -8px;
+  margin-bottom: clamp(-4px, -0.46vw, -8px);
 }
 
 .title {
-  font-size: 80px;
-  line-height: 96px;
+  font-size: clamp(32px, 4.63vw, 80px);
+  line-height: 1.2;
 }
 
 .list {
   list-style: disc;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: normal;
-  padding-left: 27px;
+  font-size: clamp(14px, 1.04vw, 18px);
+  line-height: 1.5;
+  padding-left: 1.5em;
 }
 
 .list li {
@@ -62,11 +54,34 @@
 .statBlock {
   display: flex;
   flex-direction: column;
+  gap: 2px;
 }
 
 .platform {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 600;
-  font-size: 18px;
+  font-size: clamp(14px, 1.04vw, 18px);
   line-height: normal;
+}
+
+@media (max-width: 768px) {
+  .section {
+    grid-template-columns: 1fr;
+    padding: 32px 24px;
+    gap: 40px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    margin-bottom: -4px;
+  }
+
+  .title {
+    font-size: clamp(40px, 11vw, 64px);
+  }
+
+  .list,
+  .platform {
+    font-size: 16px;
+  }
 }
