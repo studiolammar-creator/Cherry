@@ -104,7 +104,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: clamp(6px, 0.46vw, 8px) clamp(10px, 0.69vw, 12px);
+  height: 40px;
+  padding: 0 clamp(10px, 0.69vw, 12px);
   border-radius: 2px;
   font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(12px, 0.93vw, 16px);
@@ -150,23 +151,34 @@
   }
 
   .panelContent {
-    padding: 32px 24px;
+    padding: 32px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .videoHeading {
+    align-items: center;
   }
 
   .videoSubtitle {
     font-size: 14px;
     margin-bottom: -4px;
+    text-align: center;
   }
 
   .videoTitle {
     font-size: clamp(36px, 10vw, 60px);
+    text-align: center;
   }
 
   .videoDesc {
     font-size: 16px;
+    text-align: center;
   }
 
   .outlineBtn {
     font-size: 14px;
+    align-self: stretch;
+    width: 100%;
   }
 }

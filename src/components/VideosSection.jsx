@@ -44,7 +44,7 @@ export default function VideosSection() {
               <p className={`${styles.videoTitle} ${styles.darkText}`}>Short form videos</p>
             </div>
             <p className={`${styles.videoDesc} ${styles.darkText}`}>
-              Watch my playthroughs and shouting vibes during my long form videos
+              Whatch my shouting vibes and amazing gameplay moments during my short form videos
             </p>
             <a
               href="https://www.tiktok.com/@cherrayy_?lang=en"

@@ -107,7 +107,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: clamp(6px, 0.46vw, 8px) clamp(10px, 0.69vw, 12px);
+  height: 40px;
+  padding: 0 clamp(10px, 0.69vw, 12px);
   background-color: #a50612;
   border: none;
   border-radius: 2px;
@@ -141,11 +142,18 @@
   }
 
   .content {
-    padding: 32px 24px 40px;
+    padding: 32px 32px 40px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .titleBlock {
+    align-items: center;
   }
 
   .tagline {
     font-size: 14px;
+    text-align: center;
   }
 
   .nameRow {
@@ -164,9 +172,12 @@
 
   .bio {
     font-size: 16px;
+    text-align: center;
   }
 
   .ctaBtn {
     font-size: 14px;
+    align-self: stretch;
+    width: 100%;
   }
 }
