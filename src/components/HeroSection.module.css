@@ -42,9 +42,10 @@
 .content {
   position: relative;
   z-index: 1;
-  padding: clamp(32px, 21vw, 365px) clamp(20px, 4.6vw, 80px) clamp(32px, 4.6vw, 80px);
+  padding: clamp(32px, 4.6vw, 80px) clamp(20px, 4.6vw, 80px);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: clamp(16px, 1.6vw, 28px);
 }
 

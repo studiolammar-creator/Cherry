@@ -144,6 +144,15 @@
     order: 0;
   }
 
+  .coverImgTop {
+    inset: unset;
+    top: -320px;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 320px);
+    object-position: center top;
+  }
+
   /* Always show image first on mobile */
   .row .textPanel {
     order: 1;
