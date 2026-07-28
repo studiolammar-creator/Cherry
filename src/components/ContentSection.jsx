@@ -35,6 +35,7 @@ const stats = [
     items: [
       '3,641 followers',
       '74 average viewers (last 30 days)',
+      '204 peak viewers',
       'Partnered on Twitch',
     ],
   },
