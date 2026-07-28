@@ -11,11 +11,10 @@ const availableFor = [
 ]
 
 const socialIcons = [
-  { src: '/assets/icon-tiktok.svg', alt: 'TikTok' },
-  { src: '/assets/icon-youtube.svg', alt: 'YouTube' },
-  { src: '/assets/icon-twitch.svg', alt: 'Twitch' },
-  { src: '/assets/icon-instagram.svg', alt: 'Instagram' },
-  { src: '/assets/icon-discord.svg', alt: 'Discord' },
+  { src: '/assets/icon-tiktok.svg', alt: 'TikTok', href: 'https://www.tiktok.com/@cherrayy_' },
+  { src: '/assets/icon-youtube.svg', alt: 'YouTube', href: 'https://www.youtube.com/@CH3RRYYT' },
+  { src: '/assets/icon-twitch.svg', alt: 'Twitch', href: 'https://www.twitch.tv/cherrayy_' },
+  { src: '/assets/icon-discord.svg', alt: 'Discord', href: 'https://discord.gg/BWqhrnuUFK' },
 ]
 
 export default function CollabSection() {
@@ -60,7 +59,15 @@ export default function CollabSection() {
 
         <div className={styles.socialIcons}>
           {socialIcons.map((icon) => (
-            <img key={icon.alt} className={styles.icon} src={icon.src} alt={icon.alt} />
+            <a
+              key={icon.alt}
+              href={icon.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={icon.alt}
+            >
+              <img className={styles.icon} src={icon.src} alt={icon.alt} />
+            </a>
           ))}
         </div>
       </div>
