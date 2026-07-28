@@ -33,18 +33,18 @@ const stats = [
   {
     platform: 'Twitch',
     items: [
-      '3.548 followers',
-      '30+ average viewers (last 30 days)',
-      '204 peak viewers (last 30 days)',
+      '3,641 followers',
+      '74 average viewers (last 30 days)',
+      'Partnered on Twitch',
     ],
   },
   {
     platform: 'TikTok',
-    items: ['2.965 followers', '27.4K monthly views'],
+    items: ['74.6K video views (last 30 days)', '3K followers'],
   },
   {
     platform: 'YouTube',
-    items: ['378 subscribers', '36.6K monthly views'],
+    items: ['401 subscribers', '51K monthly views'],
   },
 ]
 
